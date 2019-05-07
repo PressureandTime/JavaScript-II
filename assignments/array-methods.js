@@ -60,27 +60,32 @@ let fullName = [];
 
 runners.forEach(entry =>{
     fullName.push(`${entry.first_name} ${entry.last_name}`);
- })
+ });
 
 // Object.entries(runners).forEach((entry) =>{
 //     fullName.push(entry);
 // })
 
-
-// runners.forEach(function(item.first_name & item.last_name){
-// fullName.push(item.first_name & item.last_name);
-// });
-
 console.log(fullName);
 
 // ==== Challenge 2: Use .map() ====
-// The event director needs to have all the runner's first names converted to uppercase because the director BECAME DRUNK WITH POWER. Convert each first name into all caps and log the result
-let allCaps = [];
+// The event director needs to have all the runner's first names 
+//converted to uppercase because the director BECAME DRUNK WITH POWER. 
+//Convert each first name into all caps and log the result
+
+let allCaps = runners.map(function(element){
+    return element.first_name.toUpperCase();
+});
+
 console.log(allCaps); 
 
 // ==== Challenge 3: Use .filter() ====
-// The large shirts won't be available for the event due to an ordering issue.  Get a list of runners with large sized shirts so they can choose a different size. Return an array named largeShirts that contains information about the runners that have a shirt size of L and log the result
+// The large shirts won't be available for the event due to an ordering issue. 
+// Get a list of runners with large sized shirts so they can choose a different size. 
+//Return an array named largeShirts that contains information about the runners
+// that have a shirt size of L and log the result
 let largeShirts = [];
+
 console.log(largeShirts);
 
 // ==== Challenge 4: Use .reduce() ====
