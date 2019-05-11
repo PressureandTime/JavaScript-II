@@ -2,6 +2,25 @@
 // Write a simple closure of your own creation.  Keep it simple!
 
 
+const alfa = "WHATS UP";
+
+function myFunction() {
+  console.log(alfa);
+  const beta = "NOTHING,MUCH";
+
+  function nestedFunction() {
+    console.log(beta);
+    const gama = "ALL RIGHT THEN"
+    function nestedAnotherOne() {
+      const delta = 'BYE';
+    }
+  }
+  nestedFunction();
+}
+myFunction();
+
+
+
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
 
