@@ -25,9 +25,9 @@ myFunction();
 
 
 function multiplier(factor) {
-  debugger;
+ 
   return function (x) {
-    debugger;
+   
     return x * factor;
   };
 }
@@ -40,7 +40,7 @@ console.log(doubler(100));
 // newCounter(); // 1
 // newCounter(); // 2
 
-
+console.log("hello");
 
 
 // ==== Challenge 3: Create a counter function with an object that can increment and decrement ====
@@ -50,12 +50,12 @@ const counterFactory = () => {
   let someObject = {
     increment: function () {
       ++alfa;
-      console.log(alfa);
+      return(alfa);
     },
 
     decrement: function () {
       --alfa;
-      console.log(alfa);
+      return(alfa);
     }
   };
 
@@ -64,7 +64,7 @@ const counterFactory = () => {
 };
 
 let bla = counterFactory();
-bla.increment();
+console.log(bla.increment());
 
 // Return an object that has two methods called `increment` and `decrement`.
 // `increment` should increment a counter variable in closure scope and return it.
